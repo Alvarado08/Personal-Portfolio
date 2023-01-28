@@ -24,8 +24,7 @@ nav {
 }
 
 .logo {
-    font-size: 32px;
-    font-weight: bold;
+    width: 3.2rem;
 }
 
 .hero nav ul {
@@ -190,6 +189,7 @@ footer {
 
 .hamburger {
     display: none;
+    cursor: pointer;
 }
 
 .hamburger:focus {
@@ -231,18 +231,36 @@ footer {
     }
 
     .hamburger {
+        position: absolute;
+        top: 1.2rem;
+        right: 1rem;
         display: block;
         border: 0;
         background: transparent;
         color: white;
         font-size: 30px;
+        /* display: block;
+        border: 0;
+        background: transparent;
+        color: white;
+        font-size: 30px;
         margin: 12px;
-        align-self: flex-end;
+        align-self: flex-end; */
     }
 
     .logo {
-        display: block;
-        margin: 0 0 10px 5px;
+        align-self: flex-start;
+        justify-content: center;
+        margin: 10px 0 16px 16px;
+    }
+
+    .navbar-links {
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center; 
+        transition: all .5s ease-in-out;
     }
 
     .hero nav ul{
@@ -252,11 +270,19 @@ footer {
         margin-bottom: 15px;
         align-self: flex-start;
         font-size: 25px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hero nav ul li {
+        margin-right: 2.7rem;
+        text-align: center; 
     }
 
     .hero nav {
-        display: flex;
-        flex-direction: column-reverse;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
         background: #2b2c38;
         margin: 0;
     }
